@@ -10,9 +10,13 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- script: pip install pyang
-  displayName: 'Run a one-line script'
-- script: pip install pyang
-  displayName: 'Run a one-line script'
+- script: git clone https://github.com/mbj4668/pyang.git
+  displayName: 'clone pyang'
+
+- script: python setup.py install
+  displayName: 'install pyang'
+
+- script: pyang -version
+  displayName: 'get pyang version'
 
 
