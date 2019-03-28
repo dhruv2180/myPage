@@ -15,8 +15,4 @@ steps:
 
 - script: |
     pip install pyang
-    pyang $(Build.SourcesDirectory)/Common/*.yang
-    pyang $(Build.SourcesDirectory)/Device/*.yang -p ../Common
-    pyang $(Build.SourcesDirectory)/Network/*.yang -p ../Common
-    pyang $(Build.SourcesDirectory)/Service/*.yang -p ../Common
   displayName: 'Run a multi-line script'
