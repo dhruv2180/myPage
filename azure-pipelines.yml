@@ -13,4 +13,8 @@ steps:
 - script: pip install pyang
   displayName: 'Run a one-line script'
 
+steps:
+- script: pyang -version
+  displayName: 'Run a one-line script'
+
 
