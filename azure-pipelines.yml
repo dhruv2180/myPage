@@ -23,4 +23,8 @@ steps:
     pyang -version
   displayName: 'Get pyang version'
 
+- script: |
+    pyang *.yang
+  displayName: 'Get pyang version'
+
 
